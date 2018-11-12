@@ -1,0 +1,5 @@
+﻿  SistemaAlarma.cpp
+  main.cpp
+  Generando código...
+c:\users\kenneth\documents\tec files\ii semestre 2018\taller de progra\evaluaciones\tarea programada iv - c++ - alarmas\consoleapplication3\sistemaalarma.cpp(468): warning C4715: 'SistemaAlarma::buscar': no todas las rutas de acceso de control devuelven un valor
+  ConsoleApplication3.vcxproj -> C:\Users\Kenneth\Documents\TEC files\II Semestre 2018\Taller de Progra\Evaluaciones\Tarea Programada IV - C++ - Alarmas\Debug\ConsoleApplication3.exe
