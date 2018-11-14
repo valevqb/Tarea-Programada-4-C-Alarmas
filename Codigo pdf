@@ -1,0 +1,19 @@
+#include <cstdlib>
+#include <windows.h>
+#include<iostream>
+#include<stdio.h>
+ 
+// ...
+using namespace std;
+ 
+int main(int argc, char** argv) {
+    char e[6];
+    cout<<"Escribe el  número de la escritura: \r\n";
+    cin>>e;
+    //printf("Este es el número de escritura que escribiste:%c",e);
+    cout<<"Tu escritura es: ";
+    cout<<e;
+ShellExecute(GetDesktopWindow(),"open","C:\\"nombre".pdf", NULL, NULL, SW_SHOWNORMAL);
+ 
+    return 0;
+}
