@@ -13,7 +13,7 @@ public:
 		HD = nullptr;
 		HI = nullptr;
 		padre = nullptr;
-		estado = 0;
+		estado = false;
 		codsSecundarios = nullptr;
 	}
 	~SistemaAlarma()
@@ -38,7 +38,7 @@ public:
 	void inorden(Sensor*pRaiz);
 	void borrar(int pNumZona);
 	void borrar(int pNumZona, Sensor*pRaiz);
-	bool validar(string contra);
+	bool validar(string pcontra);
 	CodigoSecundario* buscarCodSecundario(int numZona);
 	void mostrarCod_secundario();
 	void insertarCodigoSecundario(int pNumCodigo, int pCodigo, string pNombre, int pTelefono);

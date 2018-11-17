@@ -499,7 +499,7 @@ bool SistemaAlarma::validar(string pcontra)
 	bool digi = false;
 	bool simbol = false;
 	if (pcontra.length() >= 8) {
-		for (unsigned i = 0; i < pcontra.length(); ++i){
+		for (unsigned i = 0; i < pcontra.length(); ++i) {
 			if (pcontra.at(i) >= 65 && pcontra.at(i) < 91) {
 				mayus = true;
 			}
