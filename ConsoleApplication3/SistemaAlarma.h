@@ -39,6 +39,9 @@ public:
 	void borrar(int pNumZona);
 	void borrar(int pNumZona, Sensor*pRaiz);
 	bool validar(string pcontra);
+	int armarSistema();
+	int desarmarSistema();
+	void mostrarBitacora();
 	CodigoSecundario* buscarCodSecundario(int numZona);
 	void mostrarCod_secundario();
 	void insertarCodigoSecundario(int pNumCodigo, int pCodigo, string pNombre, int pTelefono);

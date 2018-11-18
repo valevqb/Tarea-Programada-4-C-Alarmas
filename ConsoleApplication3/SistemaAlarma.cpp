@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "SistemaAlarma.h"
 #include <string>
+#include <stdio.h>
 
 void SistemaAlarma::insertar(int pNumZona, string pDescripcion, string pDispositivo)
 {
@@ -524,4 +525,28 @@ bool SistemaAlarma::validar(string pcontra)
 		return true;
 	}
 	return false;
+}
+
+int SistemaAlarma::armarSistema()
+{
+	if (estado == 0) {
+		estado = 1;
+		return 1;
+	} else;
+	return 0;
+}
+
+int SistemaAlarma::desarmarSistema()
+{
+	if (estado == 1) {
+		estado = 0;
+		return 1;
+	}
+	else;
+	return 0;
+}
+
+void SistemaAlarma::mostrarBitacora()
+{
+	//Se requiere persistencia de datos, implementar validacion de existencia de archivos antes del read
 }
