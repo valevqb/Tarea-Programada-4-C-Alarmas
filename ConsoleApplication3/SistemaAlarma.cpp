@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "SistemaAlarma.h"
 #include <string>
+#include <stdio.h>
 
 void SistemaAlarma::insertar(int pNumZona, string pDescripcion, string pDispositivo)
 {
@@ -499,7 +500,7 @@ bool SistemaAlarma::validar(string pcontra)
 	bool digi = false;
 	bool simbol = false;
 	if (pcontra.length() >= 8) {
-		for (unsigned i = 0; i < pcontra.length(); ++i){
+		for (unsigned i = 0; i < pcontra.length(); ++i) {
 			if (pcontra.at(i) >= 65 && pcontra.at(i) < 91) {
 				mayus = true;
 			}
@@ -525,3 +526,38 @@ bool SistemaAlarma::validar(string pcontra)
 	}
 	return false;
 }
+
+int SistemaAlarma::armarSistema()
+{
+	cout << estado << endl;
+	if (estado == 0) {
+		estado = 1;
+		cout << "Armada" << endl << endl;
+		return 1;
+	} else;
+	return 0;
+}
+
+int SistemaAlarma::desarmarSistema()
+{
+	if (estado == 1) {
+		estado = 0;
+		cout << "Desarmada" << endl << endl;
+
+		return 1;
+	}
+	else;
+	return 0;
+}
+
+void SistemaAlarma::mostrarBitacora()
+{
+	//Se requiere persistencia de datos, implementar validacion de existencia de archivos antes del read}
+	cout << "Aqui muestra la bitacora" << endl << endl;
+}
+
+void SistemaAlarma::borrarBitacora()
+{
+	cout << "Aqui se borra la vara xd" << endl << endl;
+}
+
